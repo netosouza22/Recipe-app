@@ -7,12 +7,11 @@ const Div = styled.div`
     padding-top: 180px;
     position: relative;
 
-    border-radius: 10px;
     box-shadow: 0px 5px 10px #000;
     background-color: white;
 
-    margin-top: 40px;
-    width: 500px;
+    margin-top: 20px;
+    width: 655px;
 
     display: flex;
     flex-wrap: wrap;
@@ -26,16 +25,21 @@ const Img = styled.img`
     position: absolute;
     top: 0;
     align-self: center;
-
     `;
 
-const CardCal = styled.div`
-    
+const H1 = styled.h1`
+    text-align: center;
 `
 
+const CardCal = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+`
 const ImgLogo = styled.img`
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 `
 
 const Recipe = ({title, calories, ingredients, image}) => {
@@ -45,10 +49,9 @@ const Recipe = ({title, calories, ingredients, image}) => {
     return(
 
         <Div>
-   
             <Img src={image} alt={title} />
             <div>
-                <h1>{title}</h1>
+                <H1>{title}</H1>
                 <CardCal>
                     <ImgLogo src={Logo} />
                     <p> Calories: {nCalories}</p>

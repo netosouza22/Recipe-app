@@ -29,7 +29,7 @@ function Header(props) {
         <div>
             <Section>
                 <h1>LOGO</h1>
-                <p>Hello {props.nome}</p>
+                
                 <Ul>
                     <Li>Sweet Foods </Li>
                     <Li>Savoury Foods</Li>
