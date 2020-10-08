@@ -17,8 +17,26 @@ function Drinks(){
         const data = await response.json();
           setDrink(data.drinks);
       }
+    //   Ao menos já sei que vai dar certo
+        let dataArray = drink[0];
+    
+        var i = 1;
+        for(var prop in dataArray){
+            
+            if(prop === `strIngredient${i}`){
+                console.log(`Property: ${prop} | Value: ${dataArray[prop]}` );
+            }
+            i++;
+   
+        }
+      const car = {
+          voa: true,
+          move: true,
+          color: 'blue'
+      }
 
-    console.log(drink[0]);
+      console.log(car.hasOwnProperty('move'));
+                                                                                                                                   
     return(
         <div>
             <Header />
